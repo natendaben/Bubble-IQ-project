@@ -4,9 +4,3 @@
 	align-items: center;
 	justify-content: center;
 }
-
-@mixin break($length){
-	@media (max-width: $length) {
-		@content;
-	}
-}
