@@ -1,7 +1,100 @@
+*{
+	box-sizing: border-box;
+}
 body{
-	background-color: $color;
-	color: black;
-	.done{
-		color: blue;
-	} 
+	background-color: $lightColor;
+	color: $darkColor;
+	@include flexy;
+
+	header{
+		@include flexy;
+		font-family: $headerFont;
+		padding: 3%;
+		h1{
+			font-size: 300%;
+			font-weight: bold;
+			margin-bottom: 3%;
+		}
+	}
+	main{
+		width: 60%;
+		@include flexy;
+		.entry{
+			background-color: $darkColor;
+			width: 100%;
+			border-radius: 7px 7px 0px 0px;
+			padding: 3%;
+
+			input{
+				border-radius: 5px;
+				margin: 0;
+				float: left;
+				width: 75%;
+				padding: 2%;
+				font-size: 1em;
+				border: none;
+				font-family: $headerFont;
+			}
+			button{
+				border-radius: 5px;
+				font-family: $headerFont;
+				margin: 0;
+				margin-left: 2%;
+				width: 23%;
+				float: left;
+				padding: 2%;
+				height: 100%;
+				font-size: 1em;
+				border: none;
+				background-color: #bed8ef;
+				transition: .3s;
+				&:hover{
+					background-color: #68a4d9;
+				}
+			}
+		}
+		ul{
+			width: 100%;
+			margin-bottom: 10%;
+			li{
+				position: relative;
+				font-size: 1.3em;
+				font-family: $mainFont;
+				background-color: white;
+				padding: 2%;
+				&:nth-child(even){
+					background-color: #eff5fb;
+				}
+				&:hover{
+					background-color: #a6b9c9;
+					transition: .3s;
+				}
+			}
+			.done{
+				color: #f9fafb;
+				background-color: #4a6278;
+				text-decoration: line-through;
+				&:nth-child(even){
+					background-color: #4a6278;
+				}
+				&:hover{
+					background-color: #4a6278;
+					transition: .3s;
+				}
+			} 
+			.closeButton{
+				text-align: center;
+				margin: 0;
+				position: absolute;
+				right: 0;
+				top: 0;
+				text-decoration: none;
+				&:hover{
+					background-color: #ea4d4d;
+					transition: .3s;
+				}
+				padding: 2% 3% 2% 3%;
+			}
+		}
+	}
 }

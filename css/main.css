@@ -1,7 +1,94 @@
+@import url("https://fonts.googleapis.com/css?family=Neucha");
+@import url("https://fonts.googleapis.com/css?family=Roboto");
+* {
+  box-sizing: border-box; }
+
 body {
-  background-color: yellow;
-  color: black; }
-  body .done {
-    color: blue; }
+  background-color: #D1E0E2;
+  color: #1c4971;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; }
+  body header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: "Roboto";
+    padding: 3%; }
+    body header h1 {
+      font-size: 300%;
+      font-weight: bold;
+      margin-bottom: 3%; }
+  body main {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; }
+    body main .entry {
+      background-color: #1c4971;
+      width: 100%;
+      border-radius: 7px 7px 0px 0px;
+      padding: 3%; }
+      body main .entry input {
+        border-radius: 5px;
+        margin: 0;
+        float: left;
+        width: 75%;
+        padding: 2%;
+        font-size: 1em;
+        border: none;
+        font-family: "Roboto"; }
+      body main .entry button {
+        border-radius: 5px;
+        font-family: "Roboto";
+        margin: 0;
+        margin-left: 2%;
+        width: 23%;
+        float: left;
+        padding: 2%;
+        height: 100%;
+        font-size: 1em;
+        border: none;
+        background-color: #bed8ef;
+        transition: .3s; }
+        body main .entry button:hover {
+          background-color: #68a4d9; }
+    body main ul {
+      width: 100%;
+      margin-bottom: 10%; }
+      body main ul li {
+        position: relative;
+        font-size: 1.3em;
+        font-family: "Neucha";
+        background-color: white;
+        padding: 2%; }
+        body main ul li:nth-child(even) {
+          background-color: #eff5fb; }
+        body main ul li:hover {
+          background-color: #a6b9c9;
+          transition: .3s; }
+      body main ul .done {
+        color: #f9fafb;
+        background-color: #4a6278;
+        text-decoration: line-through; }
+        body main ul .done:nth-child(even) {
+          background-color: #4a6278; }
+        body main ul .done:hover {
+          background-color: #4a6278;
+          transition: .3s; }
+      body main ul .closeButton {
+        text-align: center;
+        margin: 0;
+        position: absolute;
+        right: 0;
+        top: 0;
+        text-decoration: none;
+        padding: 2% 3% 2% 3%; }
+        body main ul .closeButton:hover {
+          background-color: #ea4d4d;
+          transition: .3s; }
 
 /*# sourceMappingURL=main.css.map */
