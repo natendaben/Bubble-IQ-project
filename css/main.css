@@ -1,5 +1,7 @@
 body {
   background-color: yellow;
   color: black; }
+  body .done {
+    color: blue; }
 
 /*# sourceMappingURL=main.css.map */
