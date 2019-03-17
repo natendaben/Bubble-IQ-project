@@ -4,7 +4,7 @@ var addButton = document.getElementById("addButton"); //variable for add button
 var bigList = document.querySelector("ul"); //variable for list as a whole
 
 //Functions
-function addListItem(content){
+function addListItem(content){ //function to create the new list item using content from text box
 	var list = document.getElementById("list"); //grab list
 	var newEntry = document.createElement("li"); //create new list item
 	newEntry.appendChild(document.createTextNode(content)); //add text to list item
